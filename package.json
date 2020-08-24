@@ -1,0 +1,24 @@
+{
+  "name": "node-black-jack",
+  "version": "1.0.0",
+  "description": "Play a game of black jack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanmrudd/node-black-jack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seanmrudd/node-black-jack/issues"
+  },
+  "homepage": "https://github.com/seanmrudd/node-black-jack#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1"
+  }
+}
