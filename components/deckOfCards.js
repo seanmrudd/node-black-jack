@@ -1,76 +1,80 @@
-function Card (suit, card, value, secondaryValue) {
-    this.suit = suit;
-    this.card = card;
+
+function Card(cardName, cardSuit, cardType, value, secondaryValue) {
+    this.cardName = cardName;
+    this.cardSuit = cardSuit;
+    this.cardType = cardType;
     this.value = value;
     this.secondaryValue = secondaryValue;
 };
 
 let deck = [];
 
-function makeCard (suit, cardName, value, secondaryValue) {
-    let card = new Card(suit, cardName, value, secondaryValue);
+function makeCard(cardName, cardSuit, cardType, value, secondaryValue) {
+    let card = new Card(cardName, cardSuit, cardType, value, secondaryValue);
     deck.push(card);
 };
 
 //Hearts
-makeCard("Hearts", "2", 2);
-makeCard("Hearts", "3", 3);
-makeCard("Hearts", "4", 4);
-makeCard("Hearts", "5", 5);
-makeCard("Hearts", "6", 6);
-makeCard("Hearts", "7", 7);
-makeCard("Hearts", "8", 8);
-makeCard("Hearts", "9", 9);
-makeCard("Hearts", "10", 10);
-makeCard("Hearts", "Jack", 11);
-makeCard("Hearts", "Queen", 12);
-makeCard("Hearts", "King", 13);
-makeCard("Hearts", "Ace", 1, 11);
-
-//Clubs
-makeCard("Clubs", "2", 2);
-makeCard("Clubs", "3", 3);
-makeCard("Clubs", "4", 4);
-makeCard("Clubs", "5", 5);
-makeCard("Clubs", "6", 6);
-makeCard("Clubs", "7", 7);
-makeCard("Clubs", "8", 8);
-makeCard("Clubs", "9", 9);
-makeCard("Clubs", "10", 10);
-makeCard("Clubs", "Jack", 11);
-makeCard("Clubs", "Queen", 12);
-makeCard("Clubs", "King", 13);
-makeCard("Clubs", "Ace", 1, 11);
-
-//Diamonds
-makeCard("Diamonds", "2", 2);
-makeCard("Diamonds", "3", 3);
-makeCard("Diamonds", "4", 4);
-makeCard("Diamonds", "5", 5);
-makeCard("Diamonds", "6", 6);
-makeCard("Diamonds", "7", 7);
-makeCard("Diamonds", "8", 8);
-makeCard("Diamonds", "9", 9);
-makeCard("Diamonds", "10", 10);
-makeCard("Diamonds", "Jack", 11);
-makeCard("Diamonds", "Queen", 12);
-makeCard("Diamonds", "King", 13);
-makeCard("Diamonds", "Ace", 1, 11);
+makeCard("Two of Hearts", "Hearts", "2", 2);
+makeCard("Three of Hearts", "Hearts", "3", 3);
+makeCard("Four of Hearts", "Hearts", "4", 4);
+makeCard("Five of Hearts", "Hearts", "5", 5);
+makeCard("Six of Hearts", "Hearts", "6", 6);
+makeCard("Seven of Hearts", "Hearts", "7", 7);
+makeCard("Eight of Hearts", "Hearts", "8", 8);
+makeCard("Nine of Hearts", "Hearts", "9", 9);
+makeCard("Ten of Hearts", "Hearts", "10", 10);
+makeCard("Jack of Hearts", "Hearts", "Jack", 10);
+makeCard("Queen of Hearts", "Hearts", "Queen", 10);
+makeCard("King of Hearts", "Hearts", "King", 10);
+makeCard("Ace of Hearts", "Hearts", "Ace", 1, 11);
 
 //Spades
-makeCard("Spades", "2", 2);
-makeCard("Spades", "3", 3);
-makeCard("Spades", "4", 4);
-makeCard("Spades", "5", 5);
-makeCard("Spades", "6", 6);
-makeCard("Spades", "7", 7);
-makeCard("Spades", "8", 8);
-makeCard("Spades", "9", 9);
-makeCard("Spades", "10", 10);
-makeCard("Spades", "Jack", 11);
-makeCard("Spades", "Queen", 12);
-makeCard("Spades", "King", 13);
-makeCard("Spades", "Ace", 1, 11);
+makeCard("Two of Spades", "Spades", "2", 2);
+makeCard("Three of Spades", "Spades", "3", 3);
+makeCard("Four of Spades", "Spades", "4", 4);
+makeCard("Five of Spades", "Spades", "5", 5);
+makeCard("Six of Spades", "Spades", "6", 6);
+makeCard("Seven of Spades", "Spades", "7", 7);
+makeCard("Eight of Spades", "Spades", "8", 8);
+makeCard("Nine of Spades", "Spades", "9", 9);
+makeCard("Ten of Spades", "Spades", "10", 10);
+makeCard("Jack of Spades", "Spades", "Jack", 10);
+makeCard("Queen of Spades", "Spades", "Queen", 10);
+makeCard("King of Spades", "Spades", "King", 10);
+makeCard("Ace of Spades", "Spades", "Ace", 1, 11);
+
+//Diamonds
+makeCard("Two of Diamonds", "Diamonds", "2", 2);
+makeCard("Three of Diamonds", "Diamonds", "3", 3);
+makeCard("Four of Diamonds", "Diamonds", "4", 4);
+makeCard("Five of Diamonds", "Diamonds", "5", 5);
+makeCard("Six of Diamonds", "Diamonds", "6", 6);
+makeCard("Seven of Diamonds", "Diamonds", "7", 7);
+makeCard("Eight of Diamonds", "Diamonds", "8", 8);
+makeCard("Nine of Diamonds", "Diamonds", "9", 9);
+makeCard("Ten of Diamonds", "Diamonds", "10", 10);
+makeCard("Jack of Diamonds", "Diamonds", "Jack", 10);
+makeCard("Queen of Diamonds", "Diamonds", "Queen", 10);
+makeCard("King of Diamonds", "Diamonds", "King", 10);
+makeCard("Ace of Diamonds", "Diamonds", "Ace", 1, 11);
+
+//Clubs
+makeCard("Two of Clubs", "Clubs", "2", 2);
+makeCard("Three of Clubs", "Clubs", "3", 3);
+makeCard("Four of Clubs", "Clubs", "4", 4);
+makeCard("Five of Clubs", "Clubs", "5", 5);
+makeCard("Six of Clubs", "Clubs", "6", 6);
+makeCard("Seven of Clubs", "Clubs", "7", 7);
+makeCard("Eight of Clubs", "Clubs", "8", 8);
+makeCard("Nine of Clubs", "Clubs", "9", 9);
+makeCard("Ten of Clubs", "Clubs", "10", 10);
+makeCard("Jack of Clubs", "Clubs", "Jack", 10);
+makeCard("Queen of Clubs", "Clubs", "Queen", 10);
+makeCard("King of Clubs", "Clubs", "King", 10);
+makeCard("Ace of Clubs", "Clubs", "Ace", 1, 11);
+
+console.log(deck);
 
 // let t = JSON.stringify(deck);
 // console.log(t);
