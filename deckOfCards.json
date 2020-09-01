@@ -1,418 +1,418 @@
 [
     {
-        "name": "Two of Hearts",
-        "suit": "Hearts",
-        "type": "2",
-        "value": 2,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 1,
+    "cardName": "Two of Hearts",
+    "cardSuit": "Hearts",
+    "cardType": "2",
+    "value": 2,
+    "secondaryValue": null
     },
     {
-        "name": "Three of Hearts",
-        "suit": "Hearts",
-        "type": "3",
-        "value": 3,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 2,
+    "cardName": "Three of Hearts",
+    "cardSuit": "Hearts",
+    "cardType": "3",
+    "value": 3,
+    "secondaryValue": null
     },
     {
-        "name": "Four of Hearts",
-        "suit": "Hearts",
-        "type": "4",
-        "value": 4,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 3,
+    "cardName": "Four of Hearts",
+    "cardSuit": "Hearts",
+    "cardType": "4",
+    "value": 4,
+    "secondaryValue": null
     },
     {
-        "name": "Five of Hearts",
-        "suit": "Hearts",
-        "type": "5",
-        "value": 5,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 4,
+    "cardName": "Five of Hearts",
+    "cardSuit": "Hearts",
+    "cardType": "5",
+    "value": 5,
+    "secondaryValue": null
     },
     {
-        "name": "Six of Hearts",
-        "suit": "Hearts",
-        "type": "6",
-        "value": 6,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 5,
+    "cardName": "Six of Hearts",
+    "cardSuit": "Hearts",
+    "cardType": "6",
+    "value": 6,
+    "secondaryValue": null
     },
     {
-        "name": "Seven of Hearts",
-        "suit": "Hearts",
-        "type": "7",
-        "value": 7,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 6,
+    "cardName": "Seven of Hearts",
+    "cardSuit": "Hearts",
+    "cardType": "7",
+    "value": 7,
+    "secondaryValue": null
     },
     {
-        "name": "Eight of Hearts",
-        "suit": "Hearts",
-        "type": "8",
-        "value": 8,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 7,
+    "cardName": "Eight of Hearts",
+    "cardSuit": "Hearts",
+    "cardType": "8",
+    "value": 8,
+    "secondaryValue": null
     },
     {
-        "name": "Nine of Hearts",
-        "suit": "Hearts",
-        "type": "9",
-        "value": 9,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 8,
+    "cardName": "Nine of Hearts",
+    "cardSuit": "Hearts",
+    "cardType": "9",
+    "value": 9,
+    "secondaryValue": null
     },
     {
-        "name": "Ten of Hearts",
-        "suit": "Hearts",
-        "type": "10",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 9,
+    "cardName": "Ten of Hearts",
+    "cardSuit": "Hearts",
+    "cardType": "10",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "Jack of Hearts",
-        "suit": "Hearts",
-        "type": "Jack",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 10,
+    "cardName": "Jack of Hearts",
+    "cardSuit": "Hearts",
+    "cardType": "Jack",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "Queen of Hearts",
-        "suit": "Hearts",
-        "type": "Queen",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 11,
+    "cardName": "Queen of Hearts",
+    "cardSuit": "Hearts",
+    "cardType": "Queen",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "King of Hearts",
-        "suit": "Hearts",
-        "type": "King",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 12,
+    "cardName": "King of Hearts",
+    "cardSuit": "Hearts",
+    "cardType": "King",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "Ace of Hearts",
-        "suit": "Hearts",
-        "type": "Ace",
-        "value": 1,
-        "secondaryValue": 11,
-        "faceUp": true
+    "cardId": 13,
+    "cardName": "Ace of Hearts",
+    "cardSuit": "Hearts",
+    "cardType": "Ace",
+    "value": 1,
+    "secondaryValue": 11
     },
     {
-        "name": "Two of Spades",
-        "suit": "Spades",
-        "type": "2",
-        "value": 2,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 14,
+    "cardName": "Two of Spades",
+    "cardSuit": "Spades",
+    "cardType": "2",
+    "value": 2,
+    "secondaryValue": null
     },
     {
-        "name": "Three of Spades",
-        "suit": "Spades",
-        "type": "3",
-        "value": 3,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 15,
+    "cardName": "Three of Spades",
+    "cardSuit": "Spades",
+    "cardType": "3",
+    "value": 3,
+    "secondaryValue": null
     },
     {
-        "name": "Four of Spades",
-        "suit": "Spades",
-        "type": "4",
-        "value": 4,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 16,
+    "cardName": "Four of Spades",
+    "cardSuit": "Spades",
+    "cardType": "4",
+    "value": 4,
+    "secondaryValue": null
     },
     {
-        "name": "Five of Spades",
-        "suit": "Spades",
-        "type": "5",
-        "value": 5,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 17,
+    "cardName": "Five of Spades",
+    "cardSuit": "Spades",
+    "cardType": "5",
+    "value": 5,
+    "secondaryValue": null
     },
     {
-        "name": "Six of Spades",
-        "suit": "Spades",
-        "type": "6",
-        "value": 6,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 18,
+    "cardName": "Six of Spades",
+    "cardSuit": "Spades",
+    "cardType": "6",
+    "value": 6,
+    "secondaryValue": null
     },
     {
-        "name": "Seven of Spades",
-        "suit": "Spades",
-        "type": "7",
-        "value": 7,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 19,
+    "cardName": "Seven of Spades",
+    "cardSuit": "Spades",
+    "cardType": "7",
+    "value": 7,
+    "secondaryValue": null
     },
     {
-        "name": "Eight of Spades",
-        "suit": "Spades",
-        "type": "8",
-        "value": 8,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 20,
+    "cardName": "Eight of Spades",
+    "cardSuit": "Spades",
+    "cardType": "8",
+    "value": 8,
+    "secondaryValue": null
     },
     {
-        "name": "Nine of Spades",
-        "suit": "Spades",
-        "type": "9",
-        "value": 9,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 21,
+    "cardName": "Nine of Spades",
+    "cardSuit": "Spades",
+    "cardType": "9",
+    "value": 9,
+    "secondaryValue": null
     },
     {
-        "name": "Ten of Spades",
-        "suit": "Spades",
-        "type": "10",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 22,
+    "cardName": "Ten of Spades",
+    "cardSuit": "Spades",
+    "cardType": "10",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "Jack of Spades",
-        "suit": "Spades",
-        "type": "Jack",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 23,
+    "cardName": "Jack of Spades",
+    "cardSuit": "Spades",
+    "cardType": "Jack",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "Queen of Spades",
-        "suit": "Spades",
-        "type": "Queen",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 24,
+    "cardName": "Queen of Spades",
+    "cardSuit": "Spades",
+    "cardType": "Queen",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "King of Spades",
-        "suit": "Spades",
-        "type": "King",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 25,
+    "cardName": "King of Spades",
+    "cardSuit": "Spades",
+    "cardType": "King",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "Ace of Spades",
-        "suit": "Spades",
-        "type": "Ace",
-        "value": 1,
-        "secondaryValue": 11,
-        "faceUp": true
+    "cardId": 26,
+    "cardName": "Ace of Spades",
+    "cardSuit": "Spades",
+    "cardType": "Ace",
+    "value": 1,
+    "secondaryValue": 11
     },
     {
-        "name": "Two of Diamonds",
-        "suit": "Diamonds",
-        "type": "2",
-        "value": 2,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 27,
+    "cardName": "Two of Diamonds",
+    "cardSuit": "Diamonds",
+    "cardType": "2",
+    "value": 2,
+    "secondaryValue": null
     },
     {
-        "name": "Three of Diamonds",
-        "suit": "Diamonds",
-        "type": "3",
-        "value": 3,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 28,
+    "cardName": "Three of Diamonds",
+    "cardSuit": "Diamonds",
+    "cardType": "3",
+    "value": 3,
+    "secondaryValue": null
     },
     {
-        "name": "Four of Diamonds",
-        "suit": "Diamonds",
-        "type": "4",
-        "value": 4,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 29,
+    "cardName": "Four of Diamonds",
+    "cardSuit": "Diamonds",
+    "cardType": "4",
+    "value": 4,
+    "secondaryValue": null
     },
     {
-        "name": "Five of Diamonds",
-        "suit": "Diamonds",
-        "type": "5",
-        "value": 5,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 30,
+    "cardName": "Five of Diamonds",
+    "cardSuit": "Diamonds",
+    "cardType": "5",
+    "value": 5,
+    "secondaryValue": null
     },
     {
-        "name": "Six of Diamonds",
-        "suit": "Diamonds",
-        "type": "6",
-        "value": 6,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 31,
+    "cardName": "Six of Diamonds",
+    "cardSuit": "Diamonds",
+    "cardType": "6",
+    "value": 6,
+    "secondaryValue": null
     },
     {
-        "name": "Seven of Diamonds",
-        "suit": "Diamonds",
-        "type": "7",
-        "value": 7,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 32,
+    "cardName": "Seven of Diamonds",
+    "cardSuit": "Diamonds",
+    "cardType": "7",
+    "value": 7,
+    "secondaryValue": null
     },
     {
-        "name": "Eight of Diamonds",
-        "suit": "Diamonds",
-        "type": "8",
-        "value": 8,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 33,
+    "cardName": "Eight of Diamonds",
+    "cardSuit": "Diamonds",
+    "cardType": "8",
+    "value": 8,
+    "secondaryValue": null
     },
     {
-        "name": "Nine of Diamonds",
-        "suit": "Diamonds",
-        "type": "9",
-        "value": 9,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 34,
+    "cardName": "Nine of Diamonds",
+    "cardSuit": "Diamonds",
+    "cardType": "9",
+    "value": 9,
+    "secondaryValue": null
     },
     {
-        "name": "Ten of Diamonds",
-        "suit": "Diamonds",
-        "type": "10",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 35,
+    "cardName": "Ten of Diamonds",
+    "cardSuit": "Diamonds",
+    "cardType": "10",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "Jack of Diamonds",
-        "suit": "Diamonds",
-        "type": "Jack",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 36,
+    "cardName": "Jack of Diamonds",
+    "cardSuit": "Diamonds",
+    "cardType": "Jack",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "Queen of Diamonds",
-        "suit": "Diamonds",
-        "type": "Queen",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 37,
+    "cardName": "Queen of Diamonds",
+    "cardSuit": "Diamonds",
+    "cardType": "Queen",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "King of Diamonds",
-        "suit": "Diamonds",
-        "type": "King",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 38,
+    "cardName": "King of Diamonds",
+    "cardSuit": "Diamonds",
+    "cardType": "King",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "Ace of Diamonds",
-        "suit": "Diamonds",
-        "type": "Ace",
-        "value": 1,
-        "secondaryValue": 11,
-        "faceUp": true
+    "cardId": 39,
+    "cardName": "Ace of Diamonds",
+    "cardSuit": "Diamonds",
+    "cardType": "Ace",
+    "value": 1,
+    "secondaryValue": 11
     },
     {
-        "name": "Two of Clubs",
-        "suit": "Clubs",
-        "type": "2",
-        "value": 2,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 40,
+    "cardName": "Two of Clubs",
+    "cardSuit": "Clubs",
+    "cardType": "2",
+    "value": 2,
+    "secondaryValue": null
     },
     {
-        "name": "Three of Clubs",
-        "suit": "Clubs",
-        "type": "3",
-        "value": 3,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 41,
+    "cardName": "Three of Clubs",
+    "cardSuit": "Clubs",
+    "cardType": "3",
+    "value": 3,
+    "secondaryValue": null
     },
     {
-        "name": "Four of Clubs",
-        "suit": "Clubs",
-        "type": "4",
-        "value": 4,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 42,
+    "cardName": "Four of Clubs",
+    "cardSuit": "Clubs",
+    "cardType": "4",
+    "value": 4,
+    "secondaryValue": null
     },
     {
-        "name": "Five of Clubs",
-        "suit": "Clubs",
-        "type": "5",
-        "value": 5,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 43,
+    "cardName": "Five of Clubs",
+    "cardSuit": "Clubs",
+    "cardType": "5",
+    "value": 5,
+    "secondaryValue": null
     },
     {
-        "name": "Six of Clubs",
-        "suit": "Clubs",
-        "type": "6",
-        "value": 6,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 44,
+    "cardName": "Six of Clubs",
+    "cardSuit": "Clubs",
+    "cardType": "6",
+    "value": 6,
+    "secondaryValue": null
     },
     {
-        "name": "Seven of Clubs",
-        "suit": "Clubs",
-        "type": "7",
-        "value": 7,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 45,
+    "cardName": "Seven of Clubs",
+    "cardSuit": "Clubs",
+    "cardType": "7",
+    "value": 7,
+    "secondaryValue": null
     },
     {
-        "name": "Eight of Clubs",
-        "suit": "Clubs",
-        "type": "8",
-        "value": 8,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 46,
+    "cardName": "Eight of Clubs",
+    "cardSuit": "Clubs",
+    "cardType": "8",
+    "value": 8,
+    "secondaryValue": null
     },
     {
-        "name": "Nine of Clubs",
-        "suit": "Clubs",
-        "type": "9",
-        "value": 9,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 47,
+    "cardName": "Nine of Clubs",
+    "cardSuit": "Clubs",
+    "cardType": "9",
+    "value": 9,
+    "secondaryValue": null
     },
     {
-        "name": "Ten of Clubs",
-        "suit": "Clubs",
-        "type": "10",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 48,
+    "cardName": "Ten of Clubs",
+    "cardSuit": "Clubs",
+    "cardType": "10",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "Jack of Clubs",
-        "suit": "Clubs",
-        "type": "Jack",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 49,
+    "cardName": "Jack of Clubs",
+    "cardSuit": "Clubs",
+    "cardType": "Jack",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "Queen of Clubs",
-        "suit": "Clubs",
-        "type": "Queen",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 50,
+    "cardName": "Queen of Clubs",
+    "cardSuit": "Clubs",
+    "cardType": "Queen",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "King of Clubs",
-        "suit": "Clubs",
-        "type": "King",
-        "value": 10,
-        "secondaryValue": null,
-        "faceUp": true
+    "cardId": 51,
+    "cardName": "King of Clubs",
+    "cardSuit": "Clubs",
+    "cardType": "King",
+    "value": 10,
+    "secondaryValue": null
     },
     {
-        "name": "Ace of Clubs",
-        "suit": "Clubs",
-        "type": "Ace",
-        "value": 1,
-        "secondaryValue": 11,
-        "faceUp": true
+    "cardId": 52,
+    "cardName": "Ace of Clubs",
+    "cardSuit": "Clubs",
+    "cardType": "Ace",
+    "value": 1,
+    "secondaryValue": 11
     }
 ]

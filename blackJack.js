@@ -1,7 +1,5 @@
 let deck = require("./deckOfCards.json");
 
-// console.log(deck);
-
 let shuffleDeck = () => {
     let deckOfCards = deck;
     let deckLength = deck.length;
@@ -10,5 +8,7 @@ let shuffleDeck = () => {
         
     }
 }
+
+console.log(deck);
 
 shuffleDeck();
