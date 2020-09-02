@@ -1,417 +1,469 @@
-[
-    {
+[ 
+{
     "cardId": 1,
     "cardName": "Two of Hearts",
     "cardSuit": "Hearts",
     "cardType": "2",
+    "cardUnicode": "2♥",
     "value": 2,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 2,
     "cardName": "Three of Hearts",
     "cardSuit": "Hearts",
     "cardType": "3",
+    "cardUnicode": "3♥",
     "value": 3,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 3,
     "cardName": "Four of Hearts",
     "cardSuit": "Hearts",
     "cardType": "4",
+    "cardUnicode": "4♥",
     "value": 4,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 4,
     "cardName": "Five of Hearts",
     "cardSuit": "Hearts",
     "cardType": "5",
+    "cardUnicode": "5♥",
     "value": 5,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 5,
     "cardName": "Six of Hearts",
     "cardSuit": "Hearts",
     "cardType": "6",
+    "cardUnicode": "6♥",
     "value": 6,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 6,
     "cardName": "Seven of Hearts",
     "cardSuit": "Hearts",
     "cardType": "7",
+    "cardUnicode": "7♥",
     "value": 7,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 7,
     "cardName": "Eight of Hearts",
     "cardSuit": "Hearts",
     "cardType": "8",
+    "cardUnicode": "8♥",
     "value": 8,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 8,
     "cardName": "Nine of Hearts",
     "cardSuit": "Hearts",
     "cardType": "9",
+    "cardUnicode": "9♥",
     "value": 9,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 9,
     "cardName": "Ten of Hearts",
     "cardSuit": "Hearts",
     "cardType": "10",
+    "cardUnicode": "10♥",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 10,
     "cardName": "Jack of Hearts",
     "cardSuit": "Hearts",
     "cardType": "Jack",
+    "cardUnicode": "J♥",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 11,
     "cardName": "Queen of Hearts",
     "cardSuit": "Hearts",
     "cardType": "Queen",
+    "cardUnicode": "Q♥",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 12,
     "cardName": "King of Hearts",
     "cardSuit": "Hearts",
     "cardType": "King",
+    "cardUnicode": "K♥",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 13,
     "cardName": "Ace of Hearts",
     "cardSuit": "Hearts",
     "cardType": "Ace",
+    "cardUnicode": "A♥",
     "value": 1,
     "secondaryValue": 11
     },
-    {
+{
     "cardId": 14,
     "cardName": "Two of Spades",
     "cardSuit": "Spades",
     "cardType": "2",
+    "cardUnicode": "2♠",
     "value": 2,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 15,
     "cardName": "Three of Spades",
     "cardSuit": "Spades",
     "cardType": "3",
+    "cardUnicode": "3♠",
     "value": 3,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 16,
     "cardName": "Four of Spades",
     "cardSuit": "Spades",
     "cardType": "4",
+    "cardUnicode": "4♠",
     "value": 4,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 17,
     "cardName": "Five of Spades",
     "cardSuit": "Spades",
     "cardType": "5",
+    "cardUnicode": "5♠",
     "value": 5,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 18,
     "cardName": "Six of Spades",
     "cardSuit": "Spades",
     "cardType": "6",
+    "cardUnicode": "6♠",
     "value": 6,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 19,
     "cardName": "Seven of Spades",
     "cardSuit": "Spades",
     "cardType": "7",
+    "cardUnicode": "7♠",
     "value": 7,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 20,
     "cardName": "Eight of Spades",
     "cardSuit": "Spades",
     "cardType": "8",
+    "cardUnicode": "8♠",
     "value": 8,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 21,
     "cardName": "Nine of Spades",
     "cardSuit": "Spades",
     "cardType": "9",
+    "cardUnicode": "9♠",
     "value": 9,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 22,
     "cardName": "Ten of Spades",
     "cardSuit": "Spades",
     "cardType": "10",
+    "cardUnicode": "10♠",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 23,
     "cardName": "Jack of Spades",
     "cardSuit": "Spades",
     "cardType": "Jack",
+    "cardUnicode": "J♠",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 24,
     "cardName": "Queen of Spades",
     "cardSuit": "Spades",
     "cardType": "Queen",
+    "cardUnicode": "Q♠",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 25,
     "cardName": "King of Spades",
     "cardSuit": "Spades",
     "cardType": "King",
+    "cardUnicode": "K♠",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 26,
     "cardName": "Ace of Spades",
     "cardSuit": "Spades",
     "cardType": "Ace",
+    "cardUnicode": "A♠",
     "value": 1,
     "secondaryValue": 11
     },
-    {
+{
     "cardId": 27,
     "cardName": "Two of Diamonds",
     "cardSuit": "Diamonds",
     "cardType": "2",
+    "cardUnicode": "2♦",
     "value": 2,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 28,
     "cardName": "Three of Diamonds",
     "cardSuit": "Diamonds",
     "cardType": "3",
+    "cardUnicode": "3♦",
     "value": 3,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 29,
     "cardName": "Four of Diamonds",
     "cardSuit": "Diamonds",
     "cardType": "4",
+    "cardUnicode": "4♦",
     "value": 4,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 30,
     "cardName": "Five of Diamonds",
     "cardSuit": "Diamonds",
     "cardType": "5",
+    "cardUnicode": "5♦",
     "value": 5,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 31,
     "cardName": "Six of Diamonds",
     "cardSuit": "Diamonds",
     "cardType": "6",
+    "cardUnicode": "6♦",
     "value": 6,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 32,
     "cardName": "Seven of Diamonds",
     "cardSuit": "Diamonds",
     "cardType": "7",
+    "cardUnicode": "7♦",
     "value": 7,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 33,
     "cardName": "Eight of Diamonds",
     "cardSuit": "Diamonds",
     "cardType": "8",
+    "cardUnicode": "8♦",
     "value": 8,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 34,
     "cardName": "Nine of Diamonds",
     "cardSuit": "Diamonds",
     "cardType": "9",
+    "cardUnicode": "9♦",
     "value": 9,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 35,
     "cardName": "Ten of Diamonds",
     "cardSuit": "Diamonds",
     "cardType": "10",
+    "cardUnicode": "10♦",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 36,
     "cardName": "Jack of Diamonds",
     "cardSuit": "Diamonds",
     "cardType": "Jack",
+    "cardUnicode": "J♦",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 37,
     "cardName": "Queen of Diamonds",
     "cardSuit": "Diamonds",
     "cardType": "Queen",
+    "cardUnicode": "Q♦",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 38,
     "cardName": "King of Diamonds",
     "cardSuit": "Diamonds",
     "cardType": "King",
+    "cardUnicode": "K♦",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 39,
     "cardName": "Ace of Diamonds",
     "cardSuit": "Diamonds",
     "cardType": "Ace",
+    "cardUnicode": "A♦",
     "value": 1,
     "secondaryValue": 11
     },
-    {
+{
     "cardId": 40,
     "cardName": "Two of Clubs",
     "cardSuit": "Clubs",
     "cardType": "2",
+    "cardUnicode": "2♣",
     "value": 2,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 41,
     "cardName": "Three of Clubs",
     "cardSuit": "Clubs",
     "cardType": "3",
+    "cardUnicode": "3♣",
     "value": 3,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 42,
     "cardName": "Four of Clubs",
     "cardSuit": "Clubs",
     "cardType": "4",
+    "cardUnicode": "4♣",
     "value": 4,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 43,
     "cardName": "Five of Clubs",
     "cardSuit": "Clubs",
     "cardType": "5",
+    "cardUnicode": "5♣",
     "value": 5,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 44,
     "cardName": "Six of Clubs",
     "cardSuit": "Clubs",
     "cardType": "6",
+    "cardUnicode": "6♣",
     "value": 6,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 45,
     "cardName": "Seven of Clubs",
     "cardSuit": "Clubs",
     "cardType": "7",
+    "cardUnicode": "7♣",
     "value": 7,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 46,
     "cardName": "Eight of Clubs",
     "cardSuit": "Clubs",
     "cardType": "8",
+    "cardUnicode": "8♣",
     "value": 8,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 47,
     "cardName": "Nine of Clubs",
     "cardSuit": "Clubs",
     "cardType": "9",
+    "cardUnicode": "9♣",
     "value": 9,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 48,
     "cardName": "Ten of Clubs",
     "cardSuit": "Clubs",
     "cardType": "10",
+    "cardUnicode": "10♣",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 49,
     "cardName": "Jack of Clubs",
     "cardSuit": "Clubs",
     "cardType": "Jack",
+    "cardUnicode": "J♣",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 50,
     "cardName": "Queen of Clubs",
     "cardSuit": "Clubs",
     "cardType": "Queen",
+    "cardUnicode": "Q♣",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 51,
     "cardName": "King of Clubs",
     "cardSuit": "Clubs",
     "cardType": "King",
+    "cardUnicode": "K♣",
     "value": 10,
     "secondaryValue": null
     },
-    {
+{
     "cardId": 52,
     "cardName": "Ace of Clubs",
     "cardSuit": "Clubs",
     "cardType": "Ace",
+    "cardUnicode": "A♣",
     "value": 1,
     "secondaryValue": 11
     }
