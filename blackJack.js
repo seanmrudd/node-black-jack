@@ -1,10 +1,14 @@
-var inquirer = require('inquirer');
+var inquirer = require("inquirer");
 const deck = require("./deckOfCards.json");
 const chalk = require('chalk');
+var mysql = require("mysql");
+
+
 
 let shuffledDeck = [];
 let player1Hand = [];
 let computerHand = [];
+let player1HandScore = 0;
 
 let startNewGame = () => {
     shuffleDeck();
@@ -21,7 +25,7 @@ let shuffleDeck = () => {
     let deckOfCards = deck;
     let deckLength = deckOfCards.length
 
-    for(let i = 0; i < deckLength; i++) {
+    for (let i = 0; i < deckLength; i++) {
         let randomDeckIndex = Math.floor(Math.random() * deckOfCards.length);
         let randomCard = deckOfCards[randomDeckIndex];
         shuffledDeck.splice(0, 0, randomCard);
@@ -30,22 +34,22 @@ let shuffleDeck = () => {
 }
 
 let deal = () => {
-    player1Hand.splice(0, 0, shuffledDeck[0]);
+    player1Hand.push(shuffledDeck[0]);
     shuffledDeck.splice(0, 1);
 
-    computerHand.splice(0, 0, shuffledDeck[0]);
+    computerHand.push(shuffledDeck[0]);
     shuffledDeck.splice(0, 1);
 
-    player1Hand.splice(0, 0, shuffledDeck[0]);
+    player1Hand.push(shuffledDeck[0]);
     shuffledDeck.splice(0, 1);
 
-    computerHand.splice(0, 0, shuffledDeck[0]);
+    computerHand.push(shuffledDeck[0]);
     shuffledDeck.splice(0, 1);
 }
 
 let playGame = () => {
-    console.log(chalk.red(`\nDealer has a ${computerHand[0].cardName} and a ${computerHand[1].cardName}\n[${computerHand[0].cardUnicode}] [  ]`));
-    console.log(chalk.yellow(`\nYou have ${player1Hand[0].cardName} and a ${player1Hand[1].cardName}\n[${player1Hand[0].cardUnicode}] [${player1Hand[1].cardUnicode}]\n`));
+    showDealerHand();
+    showPlayerHand();
     inquirer
         .prompt([
             {
@@ -65,20 +69,47 @@ let playGame = () => {
                     break;
             }
         })
+        .catch(error => {
+            if (error) {
+                console.log(error);
+            } 
+        })
+}
+
+let showDealerHand = () => {
+    console.log(chalk.red("\nThe dealer has a"));
+    for (i = 0; i < computerHand.length; i++) {
+        if (i == 0) {
+            console.log(chalk.red("[  ]"));
+        } else {
+            console.log(chalk.red(`[${computerHand[i].cardUnicode}] ${computerHand[i].cardName}`));
+        }
+    }
+}
+
+let showPlayerHand = () => {
+    console.log(chalk.yellow("\nYou have a"));
+    for (i = 0; i < player1Hand.length; i++) {
+        console.log(chalk.yellow(`[${computerHand[i].cardUnicode}] ${computerHand[i].cardName}`));
+    }
+    console.log("\n");
 }
 
 let hit = () => {
     player1Hand.push(shuffledDeck[0]);
     shuffledDeck.splice(0, 1);
-    console.log(player1Hand);
-
-    let player1HandScore = 0;
 
     for (i = 0; i < player1Hand.length; i++) {
         player1HandScore += player1Hand[i].value
     }
 
-    console.log(player1HandScore);
+    console.log(player1Hand);
+    console.log(player1Hand[2].cardUnicode);
+    playGame();
+//     if (player1HandScore == 21) {
+//         endGame();
+//     } else
+//         playGame();
 }
 
 let stay = () => {
