@@ -3,7 +3,14 @@ const deck = require("./deckOfCards.json");
 const chalk = require('chalk');
 var mysql = require("mysql");
 
+var connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'rootroot',
+    database: 'blackjack_db'
+  });
 
+connection.connect();
 
 let shuffledDeck = [];
 let player1Hand = [];
@@ -34,17 +41,18 @@ let shuffleDeck = () => {
 }
 
 let deal = () => {
-    player1Hand.push(shuffledDeck[0]);
-    shuffledDeck.splice(0, 1);
+    // player1Hand.push(shuffledDeck[0]);
+    // shuffledDeck.splice(0, 1);
 
-    computerHand.push(shuffledDeck[0]);
-    shuffledDeck.splice(0, 1);
+    // computerHand.push(shuffledDeck[0]);
+    // shuffledDeck.splice(0, 1);
 
-    player1Hand.push(shuffledDeck[0]);
-    shuffledDeck.splice(0, 1);
+    // player1Hand.push(shuffledDeck[0]);
+    // shuffledDeck.splice(0, 1);
 
-    computerHand.push(shuffledDeck[0]);
-    shuffledDeck.splice(0, 1);
+    // computerHand.push(shuffledDeck[0]);
+    // shuffledDeck.splice(0, 1);
+    
 }
 
 let playGame = () => {
@@ -72,6 +80,7 @@ let playGame = () => {
         .catch(error => {
             if (error) {
                 console.log(error);
+                connection.end();
             } 
         })
 }
@@ -114,10 +123,12 @@ let hit = () => {
 
 let stay = () => {
     console.log("Stay");
+    connection.end();
 }
 
 let endGame = () => {
     console.log("Yay");
+    connection.end();
 }
 
 startNewGame();
