@@ -41,18 +41,17 @@ let shuffleDeck = () => {
 }
 
 let deal = () => {
-    // player1Hand.push(shuffledDeck[0]);
-    // shuffledDeck.splice(0, 1);
+    player1Hand.push(shuffledDeck[0]);
+    shuffledDeck.splice(0, 1);
 
-    // computerHand.push(shuffledDeck[0]);
-    // shuffledDeck.splice(0, 1);
+    computerHand.push(shuffledDeck[0]);
+    shuffledDeck.splice(0, 1);
 
-    // player1Hand.push(shuffledDeck[0]);
-    // shuffledDeck.splice(0, 1);
+    player1Hand.push(shuffledDeck[0]);
+    shuffledDeck.splice(0, 1);
 
-    // computerHand.push(shuffledDeck[0]);
-    // shuffledDeck.splice(0, 1);
-    
+    computerHand.push(shuffledDeck[0]);
+    shuffledDeck.splice(0, 1);
 }
 
 let playGame = () => {
@@ -112,13 +111,18 @@ let hit = () => {
         player1HandScore += player1Hand[i].value
     }
 
-    console.log(player1Hand);
-    console.log(player1Hand[2].cardUnicode);
-    playGame();
-//     if (player1HandScore == 21) {
+    test();
+    // playGame();
+
+    //     if (player1HandScore == 21) {
 //         endGame();
 //     } else
 //         playGame();
+}
+
+let test = () => {
+    showPlayerHand();
+
 }
 
 let stay = () => {
