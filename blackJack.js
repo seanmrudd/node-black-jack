@@ -12,13 +12,16 @@ var mysql = require("mysql");
 
 // connection.connect();
 
+
+// ---------- *** DECLARE VARIABLES *** ---------- //
 let shuffledDeck = [];
 let player1Hand = [];
 let computerHand = [];
-let player1HandScore = 0;
-let computerHandScore = 0;
+let player1HandScore = [];
+let computerHandScore = [];
+let cardFaceDown = true;
 
-
+// ---------- *** START GAME *** ---------- //
 let startNewGame = () => {
 
     shuffleDeck();
@@ -33,6 +36,9 @@ let startNewGame = () => {
 
 }
 
+// ---------- *** GAME FUNCTIONS *** ---------- //
+
+// ---------- *** Shuffle Deck *** ---------- //
 let shuffleDeck = () => {
 
     let deckOfCards = deck;
@@ -47,6 +53,7 @@ let shuffleDeck = () => {
 
 }
 
+// ---------- *** Deal Deck Out To Computer And Player 1 *** ---------- //
 let deal = () => {
 
     player1Hand.push(shuffledDeck[0]);
@@ -63,6 +70,7 @@ let deal = () => {
 
 }
 
+// ---------- *** After Deck Is Dealt, Play The Game *** ---------- //
 let playGame = () => {
 
     showDealerHand();
@@ -96,21 +104,31 @@ let playGame = () => {
 
 }
 
+// ---------- *** Show What The Computer Has` *** ---------- //
 let showDealerHand = () => {
+
+    computerHandScoreFunction();
 
     console.log(chalk.red("\nThe dealer has a"));
 
-    for (i = 0; i < computerHand.length; i++) {
-        if (i == 0) {
-            console.log(chalk.red("[  ]"));
-        } else {
+    if (cardFaceDown) {
+        console.log(chalk.red(`[  ]`));
+        for (i = 1; i < computerHand.length; i++) {
+            console.log(chalk.red(`[${computerHand[i].cardUnicode}] ${computerHand[i].cardName}`));
+        }
+    } else {
+        for (i = 0; i < computerHand.length; i++) {
             console.log(chalk.red(`[${computerHand[i].cardUnicode}] ${computerHand[i].cardName}`));
         }
     }
 
+    console.log(chalk.red(`Dealer is showing ${computerHandScore}`));
+
 }
 
 let showPlayerHand = () => {
+
+    player1HandScoreFunction();
 
     console.log(chalk.yellow("\nYou have a"));
 
@@ -118,12 +136,7 @@ let showPlayerHand = () => {
         console.log(chalk.yellow(`[${player1Hand[i].cardUnicode}] ${player1Hand[i].cardName}`));
     }
 
-    for (i = 0; i < player1Hand.length; i++) {
-        player1HandScore += player1Hand[i].value
-    }
-    
     console.log(chalk.yellow(`Your score is ${player1HandScore}.\n`));
-
 
 }
 
@@ -132,11 +145,7 @@ let hit = () => {
     player1Hand.push(shuffledDeck[0]);
     shuffledDeck.splice(0, 1);
 
-    player1HandScore = 0;
-
-    for (i = 0; i < player1Hand.length; i++) {
-        player1HandScore += player1Hand[i].value
-    }
+    player1HandScoreFunction();
 
     if (player1HandScore >= 21) {
         endGame();
@@ -146,17 +155,51 @@ let hit = () => {
 
 }
 
+let player1HandScoreFunction = () => {
+
+    player1HandScore.length = 0;
+
+    for (i = 0; i < player1Hand.length; i++) {
+        if (player1Hand.secondaryValue) {
+            
+        }
+    }
+
+    for (i = 0; i < player1Hand.length; i++) {
+        player1HandScore += player1Hand[i].value
+
+    }
+
+}
+
+let computerHandScoreFunction = () => {
+
+    computerHandScore = 0;
+
+    if (cardFaceDown) {
+        for (i = 1; i < computerHand.length; i++) {
+            computerHandScore += computerHand[i].value
+        }
+    } else {
+        for (i = 0; i < computerHand.length; i++) {
+            computerHandScore += computerHand[i].value
+        }
+    }
+}
+
 let test = () => {
     console.log(player1Hand[0].cardUnicode);
 }
 
 let stay = () => {
-    console.log("Stay");
+    endGame();
 }
 
 let endGame = () => {
-    switch (player1HandScore) {
-
+    switch (player1Hand) {
+        case (player1HandScore > 21):
+            console.log(`Player has a ${player1Hand} and busts.  Better luck next time.`);
+            break;
     }
 
     console.log("Yay");
