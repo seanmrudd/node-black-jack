@@ -19,6 +19,8 @@ let player1Hand = [];
 let computerHand = [];
 let player1HandScore = [];
 let computerHandScore = [];
+let player1HandScoreFirstIndex = 0;
+let secondaryValueCounter = 0;
 let cardFaceDown = true;
 
 // ---------- *** START GAME *** ---------- //
@@ -104,7 +106,7 @@ let playGame = () => {
 
 }
 
-// ---------- *** Show What The Computer Has` *** ---------- //
+// ---------- *** Show What The Computer Has *** ---------- //
 let showDealerHand = () => {
 
     computerHandScoreFunction();
@@ -126,7 +128,10 @@ let showDealerHand = () => {
 
 }
 
+// ---------- *** Show What The Player Has *** ---------- //
 let showPlayerHand = () => {
+
+    secondaryValueCounterFunction();
 
     player1HandScoreFunction();
 
@@ -140,6 +145,7 @@ let showPlayerHand = () => {
 
 }
 
+// ---------- *** Add Another Card To Player's Hand *** ---------- //
 let hit = () => {
 
     player1Hand.push(shuffledDeck[0]);
@@ -147,7 +153,7 @@ let hit = () => {
 
     player1HandScoreFunction();
 
-    if (player1HandScore >= 21) {
+    if (player1HandScore[0] >= 21) {
         endGame();
     } else {
         playGame();
@@ -155,55 +161,86 @@ let hit = () => {
 
 }
 
-let player1HandScoreFunction = () => {
+let secondaryValueCounterFunction = () => {
 
-    player1HandScore.length = 0;
+    secondaryValueCounter = 0;
 
     for (i = 0; i < player1Hand.length; i++) {
-        if (player1Hand.secondaryValue) {
-            
+
+        if (player1Hand[i].secondaryValue) {
+            secondaryValueCounter++;
         }
-    }
-
-    for (i = 0; i < player1Hand.length; i++) {
-        player1HandScore += player1Hand[i].value
 
     }
 
 }
 
+// ---------- *** Show The Score Of The Player *** ---------- //
+let player1HandScoreFunction = () => {
+
+    player1HandScore.length = [];
+
+    player1HandScoreFirstIndex = 0;
+
+    for (i = 0; i < player1Hand.length; i++) {
+
+        player1HandScoreFirstIndex += player1Hand[i].value;
+
+    }
+
+    player1HandScore.push(player1HandScoreFirstIndex);
+
+    for (i = 0; i < secondaryValueCounter; i++) {
+        player1HandScore[i+1] = ((i+1)*10) + player1HandScore[0];
+    }
+
+}
+
+// ---------- *** Show The Score The Computer Has *** ---------- //
 let computerHandScoreFunction = () => {
 
     computerHandScore = 0;
 
     if (cardFaceDown) {
+
         for (i = 1; i < computerHand.length; i++) {
             computerHandScore += computerHand[i].value
         }
+
     } else {
+
         for (i = 0; i < computerHand.length; i++) {
             computerHandScore += computerHand[i].value
         }
+
     }
+
 }
 
-let test = () => {
-    console.log(player1Hand[0].cardUnicode);
-}
-
+// ---------- *** Player Stays And Moves To The End Of The Game *** ---------- //
 let stay = () => {
+
     endGame();
+
 }
 
+// ---------- *** Move To the End Of The Game *** ---------- //
 let endGame = () => {
-    switch (player1Hand) {
-        case (player1HandScore > 21):
-            console.log(`Player has a ${player1Hand} and busts.  Better luck next time.`);
-            break;
+
+    for (i = 0; i < player1HandScore.length; i++) {
+        if (player1HandScore[0] > 21) {
+            loseGame();
+        } else {
+            
+        }
     }
 
     console.log("Yay");
     // connection.end();
+}
+
+let loseGame = () => {
+    console.log("Sorry you lost.");
 }
 
 startNewGame();
