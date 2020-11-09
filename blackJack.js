@@ -1,33 +1,32 @@
 var inquirer = require("inquirer");
 const deck = require("./deckOfCards.json");
 const chalk = require('chalk');
-var mysql = require("mysql");
-
-// var connection = mysql.createConnection({
-//     host: 'localhost',
-//     user: 'root',
-//     password: 'rootroot',
-//     database: 'blackjack_db'
-//   });
-
-// connection.connect();
 
 
-// ---------- *** DECLARE VARIABLES *** ---------- //
+////////////////// DECLARE VARIABLES //////////////////
+
+
 let shuffledDeck = [];
 let player1Hand = [];
 let computerHand = [];
 let player1HandScore = [];
 let computerHandScore = [];
 let player1HandScoreFirstIndex = 0;
-let secondaryValueCounter = 0;
+let computerHandScoreFirstInex = 0;
+let playerSecondaryValueCounter = 0;
+let computerSecondaryValueCounter = 0;
+let player1HandHighScore = 0;
+let computerHandHighScore = 0;
 let cardFaceDown = true;
+
+
+////////////////// GAME FUNCTIONS //////////////////
+
 
 // ---------- *** START GAME *** ---------- //
 let startNewGame = () => {
 
     shuffleDeck();
-
     deal();
 
     if ((player1Hand[0].value + player1Hand[1].secondaryValue) == 21) {
@@ -37,8 +36,6 @@ let startNewGame = () => {
     } else playGame();
 
 }
-
-// ---------- *** GAME FUNCTIONS *** ---------- //
 
 // ---------- *** Shuffle Deck *** ---------- //
 let shuffleDeck = () => {
@@ -131,7 +128,7 @@ let showDealerHand = () => {
 // ---------- *** Show What The Player Has *** ---------- //
 let showPlayerHand = () => {
 
-    secondaryValueCounterFunction();
+    playerSecondaryValueCounterFunction();
 
     player1HandScoreFunction();
 
@@ -161,14 +158,46 @@ let hit = () => {
 
 }
 
-let secondaryValueCounterFunction = () => {
+let computerHit = () => {
 
-    secondaryValueCounter = 0;
+    if (computerHandScore < 17) {
+        computerHand.push(shuffledDeck[0]);
+        shuffledDeck.splice(0, 1);
+    }
+
+    computerHandScoreFunction();
+    player1HandScoreFunction();
+
+    if ((computerHandScore < player1HandScore[0]) && (computerHandScore < 17)) {
+        computerHit();
+    } else {
+        compareScores();
+    }
+
+}
+
+let playerSecondaryValueCounterFunction = () => {
+
+    playerSecondaryValueCounter = 0;
 
     for (i = 0; i < player1Hand.length; i++) {
 
         if (player1Hand[i].secondaryValue) {
-            secondaryValueCounter++;
+            playerSecondaryValueCounter++;
+        }
+
+    }
+
+}
+
+let computerSecondaryValueCounterFunction = () => {
+
+    computerSecondaryValueCounter = 0;
+
+    for (i = 0; i < player1Hand.length; i++) {
+
+        if (player1Hand[i].secondaryValue) {
+            playerSecondaryValueCounter++;
         }
 
     }
@@ -179,7 +208,6 @@ let secondaryValueCounterFunction = () => {
 let player1HandScoreFunction = () => {
 
     player1HandScore.length = [];
-
     player1HandScoreFirstIndex = 0;
 
     for (i = 0; i < player1Hand.length; i++) {
@@ -190,8 +218,8 @@ let player1HandScoreFunction = () => {
 
     player1HandScore.push(player1HandScoreFirstIndex);
 
-    for (i = 0; i < secondaryValueCounter; i++) {
-        player1HandScore[i+1] = ((i+1)*10) + player1HandScore[0];
+    for (i = 0; i < playerSecondaryValueCounter; i++) {
+        player1HandScore[i + 1] = ((i + 1) * 10) + player1HandScore[0];
     }
 
 }
@@ -227,20 +255,86 @@ let stay = () => {
 // ---------- *** Move To the End Of The Game *** ---------- //
 let endGame = () => {
 
-    for (i = 0; i < player1HandScore.length; i++) {
-        if (player1HandScore[0] > 21) {
-            loseGame();
-        } else {
-            
+    player1HandHighScore = 0;
+
+    if (player1HandScore[0] > 21) {
+
+        computerFlipCard();
+        showDealerHand();
+        showPlayerHand();
+        loseGame();
+
+    } else if (computerHandScore > 21) {
+
+        winGame();
+
+    } else {
+
+        getPlayerHighScore();
+
+        computerFlipCard();
+
+        if (computerHandScore < player1HandScore[0]) {
+
+            computerHit();
+
+        }
+
+    }
+
+}
+
+let getPlayerHighScore = () => {
+
+    for (let i = 0; i < player1HandScore.length; i++) {
+
+        if ((player1HandScore[i] > player1HandHighScore) && (player1HandScore[i] <= 21)) {
+            player1HandHighScore = player1HandScore[i];
         }
     }
 
-    console.log("Yay");
-    // connection.end();
+    player1HandScore.length = 0;
+    player1HandScore.push(player1HandHighScore);
+
+}
+
+let computerFlipCard = () => {
+
+    cardFaceDown = false;
+
+}
+
+let compareScores = () => {
+
+    showDealerHand();
+    showPlayerHand();
+
+    if (player1HandScore[0] > computerHandScore) {
+        winGame();
+    } else {
+        loseGame();
+    }
+
+}
+
+let winGame = () => {
+
+    if (computerHandScore > 21) {
+        console.log(`Computer busts!  You win!  Computer has ${computerHandScore}.  You have ${player1HandScore[0]}.`);
+    } else {
+        console.log(`You win!  Computer has ${computerHandScore}.  You have ${player1HandScore[0]}.`);
+    }
+
 }
 
 let loseGame = () => {
-    console.log("Sorry you lost.");
+
+    if (player1HandScore[0] > 21) {
+        console.log(`You bust!  You lose!  Computer has ${computerHandScore}.  You have ${player1HandScore[0]}.`);
+    } else {
+        console.log(`You lose!  Computer has ${computerHandScore}.  You have ${player1HandScore[0]}.`);
+    }
+
 }
 
 startNewGame();
